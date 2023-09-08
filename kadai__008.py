@@ -1,14 +1,8 @@
-#ランダムな整数を利用するために、randomモジュールをインポート
-import random
-
-# 変数numに0～10までのランダムな整数を代入する
-var = random.randint(0, 10)
-
-print(var)
-
-if var % 3 == 0:
+if var % 3 == 0 and var % 5 != 0:
   print("Fizz")
-elif var % 5 == 0:
+elif var % 5 == 0 and var % 3 != 0:
   print("Buzz")
+elif var % 3 == 0 and var % 5 == 0:
+  print("FizzBuss")
 else:
   print(var)
